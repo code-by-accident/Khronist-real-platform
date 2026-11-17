@@ -1,0 +1,85 @@
+synonyms:
+  - term: Іоаннъ
+    type: person
+    variants: [Иоанн, Іван, Иван, Іоан]
+  - term: Іаковъ
+    type: person
+    variants: [Иаков, Яків, Яков]
+  - term: Антонъ
+    type: person
+    variants: [Антон]
+  - term: Аѳанасія
+    type: person
+    variants: [Афанасія, Афанасия]
+  - term: Василій
+    type: person
+    variants: [Василий, Василь]
+  - term: Евпраксія
+    type: person
+    variants: [Евпраксия]
+  - term: Григорій
+    type: person
+    variants: [Григорий]
+  - term: Іларіонъ
+    type: person
+    variants: [Іларіон, Илларион]
+  - term: Меланія
+    type: person
+    variants: [Мелания]
+  - term: Платонъ
+    type: person
+    variants: [Платон]
+  - term: Радіонъ
+    type: person
+    variants: [Родіон, Радион]
+  - term: Стефанъ
+    type: person
+    variants: [Стефан]
+  - term: Ѳеодоръ
+    type: person
+    variants: [Феодор, Теодор]
+  - term: Ѳеодосія
+    type: person
+    variants: [Феодосія, Феодосия]
+  - term: Ѳеодотъ
+    type: person
+    variants: [Феодот, Теодот]
+  - term: Ѳома
+    type: person
+    variants: [Фома, Тома]
+  - term: Анна
+    type: person
+    variants: [Ганна]
+  - term: Борщаговка
+    type: place
+    variants: [Борщагівка, Борщаговки, Борщагувка]
+  - term: Братская Борщаговка
+    type: place
+    variants: [Братська Борщагівка]
+  - term: Петропавловская Борщаговка
+    type: place
+    variants: [Петропавлівська Борщагівка]
+  - term: Новые Безрадичи
+    type: place
+    variants: [Нові Безрадичі]
+  - term: Старые Безрадичи
+    type: place
+    variants: [Старі Безрадичі]
+  - term: Будаевка
+    type: place
+    variants: [Будаївка]
+  - term: Бышев
+    type: place
+    variants: [Бишів]
+  - term: Беличи
+    type: place
+    variants: [Біличі]
+  - term: Михайловская Борщаговка
+    type: place
+    variants: [Михайлівська Борщагівка]
+  - term: Никольская Борщаговка
+    type: place
+    variants: [Нікольська Борщагівка]
+  - term: Софийская Борщаговка
+    type: place
+    variants: [Софійська Борщагівка]
