@@ -2,7 +2,7 @@
 
 Формат — [Keep a Changelog](https://keepachangelog.com/uk/1.1.0/), версії — за [SemVer](https://semver.org/lang/uk/).
 
-## [1.0.0] — TODO(дата випуску)
+## [1.0.0] — 20.11
 
 Перший випуск: MVP для Культурного хакатону OBRIO × МУР, трек «Історія».
 
