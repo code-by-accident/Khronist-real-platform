@@ -16,6 +16,8 @@ AI-компаньйон для дослідників українських а�
 
 Проєкт створено для Культурного хакатону OBRIO × МУР, трек «Історія».
 
+**In English.** Khronist is an AI companion for researchers of Ukrainian archives. A Chrome extension reads handwritten scans on the archive portal, explains terms and dates using a reference corpus with cited sources, and lets people translate the text into modern Ukrainian, correct it and confirm it. Confirmed transcriptions go into an open layer, Commons, published under CC BY 4.0 and searchable at [app.khronist.org](https://app.khronist.org). The same reading, explanation and search are available to AI assistants through an MCP server. The interface and documentation are in Ukrainian. The extension currently works on ARCHIUM of the Central State Historical Archive of Ukraine in Kyiv; the code is under Apache-2.0.
+
 ## Можливості
 
 - Читання рукопису. Виділіть запис на скані, і через кілька секунд він стане текстом: рядок у рядок, непевні слова позначені, обрізаний текст чи пошкоджений папір видно в попередженнях.
@@ -26,6 +28,11 @@ AI-компаньйон для дослідників українських а�
 - Цитата за ДСТУ 8302:2015, у Markdown або простим текстом.
 - Пошук у Commons за прізвищем, ім'ям чи назвою села з урахуванням давніх написань.
 - MCP-сервер: читання, пояснення й пошук в AI-асистентах із підтримкою MCP.
+
+## Спробувати за хвилину
+
+- Пошук без встановлення: відкрийте [app.khronist.org](https://app.khronist.org) і введіть, наприклад, «Коваленко». Типово показано лише підтверджені людьми записи.
+- Читання скану: відкрийте [метричну книгу 1896 року в ARCHIUM](https://archium.cdiak.archives.gov.ua/file-viewer/131976) із встановленим розширенням (кроки нижче) і виділіть запис на аркуші.
 
 ## Як користуватися
 
@@ -98,7 +105,11 @@ pnpm dev
 | [Довідник API](docs/api.md) | розробники й інтегратори: маршрути, запити, відповіді, помилки |
 | [Конфігурація](docs/configuration.md) | ті, хто розгортає: змінні середовища |
 | [Розробка](docs/development.md) | розробники: запуск, команди, тести, міграції, розгортання |
+| [Commons](docs/commons.md) | дослідники й ті, хто використовує дані: що зберігається, ліцензія, як отримати й цитувати |
+| [Корпус](docs/corpus.md) | історики: як додати або виправити статтю довідкового корпусу |
 | [Як долучитися](CONTRIBUTING.md) | автори змін: гілки, коміти, перевірки, правила коду |
+| [Журнал змін](CHANGELOG.md) | що змінилося в кожному випуску |
+| [Безпека](SECURITY.md) | як повідомити про вразливість |
 
 ## Ліцензія
 
