@@ -21,7 +21,7 @@
 {"id": "q21", "mode": "explain", "kind": "term", "text": "однодворецъ", "expected": "no_answer", "relevant": []}
 {"id": "q22", "mode": "explain", "kind": "term", "text": "солдатка", "expected": "no_answer", "relevant": []}
 {"id": "q23", "mode": "explain", "kind": "term", "text": "вдовецъ", "expected": "no_answer", "relevant": []}
-{"id": "q24", "mode": "explain", "kind": "place", "text": "Бишів", "expected": "no_answer", "relevant": []}
+{"id": "q24", "mode": "explain", "kind": "place", "text": "Глеваха", "expected": "no_answer", "relevant": []}
 {"id": "q25", "mode": "explain", "kind": "place", "text": "Біличі", "expected": "no_answer", "relevant": []}
 {"id": "q26", "mode": "chat", "text": "Яке число за новим стилем відповідає 12 січня 1884 року за старим?", "expected": "no_answer", "relevant": []}
 {"id": "q27", "mode": "chat", "text": "На скільки днів юліанський календар відставав від григоріанського в XIX столітті?", "expected": "no_answer", "relevant": []}

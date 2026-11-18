@@ -83,3 +83,258 @@ synonyms:
   - term: Софийская Борщаговка
     type: place
     variants: [Софійська Борщагівка]
+  - term: 'Вышгородъ'
+    type: place
+    variants: ['Вишгород']
+  - term: 'Новые Петровцы'
+    type: place
+    variants: ['Нові Петрівці']
+  - term: 'Лютежъ'
+    type: place
+    variants: ['Лютіж']
+  - term: 'Дымеръ'
+    type: place
+    variants: ['Димер']
+  - term: 'Гатное'
+    type: place
+    variants: ['Гатне']
+  - term: 'Крюковщина'
+    type: place
+    variants: ['Крюківщина']
+  - term: 'Боярка'
+    type: place
+    variants: ['Тарасівка']
+  - term: 'Бѣлогородка'
+    type: place
+    variants: ['Білогородка']
+  - term: 'Заборье'
+    type: place
+    variants: ['Забір’я']
+  - term: 'Скитокъ'
+    type: place
+    variants: ['Липовий Скиток']
+  - term: 'Кожуховка'
+    type: place
+    variants: ['Кожухівка']
+  - term: 'Хотовъ'
+    type: place
+    variants: ['Хотів']
+  - term: 'Лѣсники'
+    type: place
+    variants: ['Лісники']
+  - term: 'Ходосовка'
+    type: place
+    variants: ['Ходосівка']
+  - term: 'Подгорцы'
+    type: place
+    variants: ['Підгірці']
+  - term: 'Креничи'
+    type: place
+    variants: ['Креничі']
+  - term: 'Гвоздовъ'
+    type: place
+    variants: ['Гвоздів']
+  - term: 'Рославичи'
+    type: place
+    variants: ['Рославичі']
+  - term: 'Янковичи'
+    type: place
+    variants: ['Іванковичі']
+  - term: 'Великая Бугаевка'
+    type: place
+    variants: ['Велика Бугаївка']
+  - term: 'Хамбиковъ'
+    type: place
+    variants: ['Заріччя']
+  - term: 'Дмитровичи'
+    type: place
+    variants: ['Великі Дмитровичі']
+  - term: 'Обуховъ'
+    type: place
+    variants: ['Обухів']
+  - term: 'Триполь'
+    type: place
+    variants: ['Трипілля']
+  - term: 'Красное'
+    type: place
+    variants: ['Красне Перше']
+  - term: 'Жуковцы'
+    type: place
+    variants: ['Жуківці']
+  - term: 'Веремье'
+    type: place
+    variants: ['Верем’я']
+  - term: 'Черняховъ'
+    type: place
+    variants: ['Черняхів']
+  - term: 'Халепье'
+    type: place
+    variants: ['Халеп’я']
+  - term: 'Вытачевъ'
+    type: place
+    variants: ['Витачів']
+  - term: 'Срѣтовка'
+    type: place
+    variants: ['Стрітівка']
+  - term: 'Ржищевъ'
+    type: place
+    variants: ['Ржищів']
+  - term: 'Гуляники'
+    type: place
+    variants: ['Уляники']
+  - term: 'Липовъ Рогъ'
+    type: place
+    variants: ['Липовий Ріг']
+  - term: 'Паникарча'
+    type: place
+    variants: ['Панікарча']
+  - term: 'Зикрачи'
+    type: place
+    variants: ['Зікрачі']
+  - term: 'Гребени'
+    type: place
+    variants: ['Гребені']
+  - term: 'Шубовка'
+    type: place
+    variants: ['Шубівка']
+  - term: 'Липовецъ'
+    type: place
+    variants: ['Липовець']
+  - term: 'Кагарлыкъ'
+    type: place
+    variants: ['Кагарлик']
+  - term: 'Кагарлыцкая Слобода'
+    type: place
+    variants: ['Слобода']
+  - term: 'Гороховатка'
+    type: place
+    variants: ['Горохуватка']
+  - term: 'Ставы'
+    type: place
+    variants: ['Стави']
+  - term: 'Мировка'
+    type: place
+    variants: ['Мирівка']
+  - term: 'Германовка'
+    type: place
+    variants: ['Германівка']
+  - term: 'Германовская Слобода'
+    type: place
+    variants: ['Слобідка']
+  - term: 'Григоровка'
+    type: place
+    variants: ['Григорівка']
+  - term: 'Гусачовка'
+    type: place
+    variants: ['Гусачівка']
+  - term: 'Ольшанка'
+    type: place
+    variants: ['Мала Вільшанка']
+  - term: 'Копачевъ'
+    type: place
+    variants: ['Копачів']
+  - term: 'Нещеровъ'
+    type: place
+    variants: ['Нещерів']
+  - term: 'Бышевъ'
+    type: place
+    variants: ['Бишів']
+  - term: 'Пашковка'
+    type: place
+    variants: ['Пашківка']
+  - term: 'Грузька'
+    type: place
+    variants: ['Грузьке']
+  - term: 'Юровка'
+    type: place
+    variants: ['Юрівка']
+  - term: 'Новоселки'
+    type: place
+    variants: ['Новосілки']
+  - term: 'Княжичи'
+    type: place
+    variants: ['Княжичі']
+  - term: 'Музычи'
+    type: place
+    variants: ['Музичі']
+  - term: 'Гореничи'
+    type: place
+    variants: ['Гореничі']
+  - term: 'Шпитки'
+    type: place
+    variants: ['Шпитьки']
+  - term: 'Копыловъ'
+    type: place
+    variants: ['Копилів']
+  - term: 'Мотыжинъ'
+    type: place
+    variants: ['Мотижин']
+  - term: 'Карашинъ'
+    type: place
+    variants: ['Великий Карашин']
+  - term: 'Макаровъ'
+    type: place
+    variants: ['Макарів']
+  - term: 'Забуянье'
+    type: place
+    variants: ['Забуяння']
+  - term: 'Наливайковка'
+    type: place
+    variants: ['Наливайківка']
+  - term: 'Липовка'
+    type: place
+    variants: ['Липівка']
+  - term: 'Андріевка'
+    type: place
+    variants: ['Андріївка']
+  - term: 'Загальцы'
+    type: place
+    variants: ['Загальці']
+  - term: 'Шибено'
+    type: place
+    variants: ['Шибене']
+  - term: 'Микуличи'
+    type: place
+    variants: ['Микуличі']
+  - term: 'Пилиповичи'
+    type: place
+    variants: ['Пилиповичі']
+  - term: 'Рубежовка'
+    type: place
+    variants: ['Михайлівка-Рубежівка']
+  - term: 'Бабинцы'
+    type: place
+    variants: ['Бабинці']
+  - term: 'Лубьянка'
+    type: place
+    variants: ['Луб’янка']
+  - term: 'Гостомль'
+    type: place
+    variants: ['Гостомель']
+  - term: 'Демидовъ'
+    type: place
+    variants: ['Демидів']
+  - term: 'Козаровичи'
+    type: place
+    variants: ['Козаровичі']
+  - term: 'Глѣбовка'
+    type: place
+    variants: ['Глібівка']
+  - term: 'Вороновка'
+    type: place
+    variants: ['Воронівка']
+  - term: 'Семеновка'
+    type: place
+    variants: ['Семенівка']
+  - term: 'Бендюговка'
+    type: place
+    variants: ['Бендюгівка']
+  - term: 'Терновка'
+    type: place
+    variants: ['Тернівка']
+  - term: 'Горбовичи'
+    type: place
+    variants: ['Горбовичі']
+  - term: 'Берестянка'
+    type: place
+    variants: ['Маріанполе']
