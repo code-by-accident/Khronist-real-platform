@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: 'Якщо ви використовуєте Хроніст у дослідженні, процитуйте його так.'
+title: 'Хроніст'
+type: software
+abstract: 'AI-компаньйон для дослідників українських архівів: розширення Chrome читає рукописні скани, пояснює терміни й дати з джерелами, а підтверджені людьми транскрипції відкриваються для всіх у шарі Commons під CC BY 4.0.'
+authors:
+  - name: 'Команда Хроніста'
+version: 1.0.0
+license: Apache-2.0
+repository-code: 'https://github.com/code-by-accident/Khronist-real-platform'
+url: 'https://khronist.org'
+keywords:
+  - archives
+  - handwritten text recognition
+  - Ukrainian history
+  - digital humanities
+  - genealogy
+language: ukr

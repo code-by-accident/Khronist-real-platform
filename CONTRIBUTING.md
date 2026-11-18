@@ -1,6 +1,6 @@
 # Як долучитися
 
-Запуск проєкту, команди й типові проблеми описані в [docs/development.md](docs/development.md), влаштування системи — в [docs/architecture.md](docs/architecture.md), робота з продуктом — у [посібнику користувача](docs/user-guide.md).
+Запуск проєкту, команди й типові проблеми описані в [docs/development.md](docs/development.md), влаштування системи — в [docs/architecture.md](docs/architecture.md), робота з продуктом — у [посібнику користувача](docs/user-guide.md). Історикам, які наповнюють довідковий корпус, потрібен [docs/corpus.md](docs/corpus.md).
 
 ## Шлях однієї зміни
 
