@@ -12,7 +12,7 @@ const corpusText = z
 const inOrder = (item: { periodFrom: number; periodTo: number }) => item.periodFrom <= item.periodTo
 const periodOrder = { message: 'periodFrom after periodTo' }
 
-export const sourceLicenceSchema = z.enum(['суспільне надбання', 'CC BY-SA 4.0'])
+export const sourceLicenceSchema = z.enum(['суспільне надбання', 'CC BY-SA 4.0', 'CC0 1.0'])
 export const sourceKindSchema = z.enum(['dictionary', 'encyclopedia', 'wikidata', 'publication'])
 export const chunkTypeSchema = z.enum(['term', 'place', 'date', 'unit', 'abbr'])
 

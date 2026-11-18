@@ -34,6 +34,12 @@ def test_parses_front_matter_and_body(tmp_path: Path) -> None:
     assert parsed.text == "Текст статті."
 
 
+def test_accepts_cc0_licence(tmp_path: Path) -> None:
+    metadata = META.replace("CC BY-SA 4.0", "CC0 1.0")
+    parsed = parse_article(write(tmp_path, "cc0.md", article(metadata)))
+    assert parsed.meta.licence == "CC0 1.0"
+
+
 def test_rejects_file_without_front_matter(tmp_path: Path) -> None:
     with pytest.raises(CorpusError, match="front matter"):
         parse_article(write(tmp_path, "a.md", "Текст без шапки.\n"))

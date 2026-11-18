@@ -16,7 +16,7 @@ from pydantic import (
 
 ArticleType = Literal["term", "place", "date", "unit", "abbr"]
 SourceKind = Literal["dictionary", "encyclopedia", "wikidata", "publication"]
-Licence = Literal["суспільне надбання", "CC BY-SA 4.0"]
+Licence = Literal["суспільне надбання", "CC BY-SA 4.0", "CC0 1.0"]
 
 NonEmpty = Field(min_length=1)
 

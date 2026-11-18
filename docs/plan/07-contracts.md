@@ -21,7 +21,7 @@ RecognitionStatus = 'queued' | 'reading' | 'normalizing' | 'done' | 'failed'
 Hints = { language?: 'uk' | 'ru' | 'church-slavonic' | 'pl'; period?: '17' | '18' | '19' | '20'; documentType?: 'metric' | 'revision' | 'court' | 'other' }
 ```
 
-`Citation.licence` — ліцензія джерела (`суспільне надбання`, `CC BY-SA 4.0`); `retelling: true` — текст чанка є українським переказом джерела, панель підписує його «переказ статті», а не цитатою з першоджерела. `Hints.period` — століття рядком (`'17'`…`'20'`); це єдиний формат періоду в запитах, а `periodFrom`/`periodTo` джерел і чанків — ті самі століття числами.
+`Citation.licence` — ліцензія джерела (`суспільне надбання`, `CC BY-SA 4.0`, `CC0 1.0`); `retelling: true` — текст чанка є українським переказом джерела, панель підписує його «переказ статті», а не цитатою з першоджерела. `Hints.period` — століття рядком (`'17'`…`'20'`); це єдиний формат періоду в запитах, а `periodFrom`/`periodTo` джерел і чанків — ті самі століття числами.
 
 ## 2. Ядро API (`apps/api`, префікс `/v1`)
 
@@ -157,7 +157,7 @@ GET /health → { ok: true, warm: boolean, model: { name, revision } }
 
 ## 5. Формат корпусу
 
-Стаття — Markdown з YAML-шапкою (`05`, розділ 3): `term`, `variants[]` (непорожні, без повторів і без самого `term`), `type` (`term|place|date|unit|abbr`), `period` (століття римськими цифрами або діапазон двох: `XIX`, `XVIII–XIX`), `source_title`, `source_url` (лише https), `source_kind` (`dictionary|encyclopedia|wikidata|publication`, як `kind` у `/v1/admin/sources`), `licence` (`суспільне надбання` або `CC BY-SA 4.0`), опційно `wikidata_id`. Статті лежать прямо в `data/entries/`, без підтек. Інгестія надсилає джерела статей як `sources`, статті як `chunks` з `articleKey` = назва файлу, `periodFrom`/`periodTo` числами з `period` і `wikidataId`, а `variants` — як `synonyms` з `type` статті. Варіанти з `data/synonyms.yaml` мають `type: person` (імена) або `place` (села й топоніми).
+Стаття — Markdown з YAML-шапкою (`05`, розділ 3): `term`, `variants[]` (непорожні, без повторів і без самого `term`), `type` (`term|place|date|unit|abbr`), `period` (століття римськими цифрами або діапазон двох: `XIX`, `XVIII–XIX`), `source_title`, `source_url` (лише https), `source_kind` (`dictionary|encyclopedia|wikidata|publication`, як `kind` у `/v1/admin/sources`), `licence` (`суспільне надбання`, `CC BY-SA 4.0` або `CC0 1.0`), опційно `wikidata_id`. Статті лежать прямо в `data/entries/`, без підтек. Інгестія надсилає джерела статей як `sources`, статті як `chunks` з `articleKey` = назва файлу, `periodFrom`/`periodTo` числами з `period` і `wikidataId`, а `variants` — як `synonyms` з `type` статті. Варіанти з `data/synonyms.yaml` мають `type: person` (імена) або `place` (села й топоніми).
 
 ## 6. MCP-сервер (`apps/mcp`)
 

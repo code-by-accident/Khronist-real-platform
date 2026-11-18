@@ -361,6 +361,12 @@ describe('admin contracts', () => {
     }
     expect(adminSourcesRequestSchema.safeParse({ items: [source] }).success).toBe(true)
     expect(
+      adminSourcesRequestSchema.safeParse({ items: [{ ...source, licence: 'CC0 1.0' }] }).success,
+    ).toBe(true)
+    expect(
+      adminSourcesRequestSchema.safeParse({ items: [{ ...source, licence: 'CC BY 4.0' }] }).success,
+    ).toBe(false)
+    expect(
       adminSourcesRequestSchema.safeParse({ items: [{ ...source, url: 'http://example.org' }] })
         .success,
     ).toBe(false)
