@@ -2,6 +2,9 @@ import argparse
 import csv
 import json
 import sys
+from collections.abc import Iterable
+from itertools import chain, groupby
+from operator import itemgetter
 from pathlib import Path
 from typing import Literal
 from urllib.parse import urlencode
@@ -111,47 +114,60 @@ SELECT DISTINCT ?place ?code WHERE {{
         raise ValueError(f"Wikidata is missing these QID and KATOTTH pairs: {missing}")
 
 
+def require_unique(records: Iterable[tuple[str, Path]], label: str) -> None:
+    groups = groupby(sorted(records), key=itemgetter(0))
+    duplicates = (
+        (key, paths) for key, group in groups if len(paths := [path for _, path in group]) > 1
+    )
+    conflict = next(duplicates, None)
+    if conflict is not None:
+        key, paths = conflict
+        raise ValueError(f"{label} {key!r} also listed in {', '.join(map(str, paths))}")
+
+
 def pending_articles(places: list[Place], entries: Path, *, check: bool) -> dict[Path, str]:
     targets = {entries / f"place-{place.slug}.md": place for place in places}
-    names: dict[str, Path] = {}
-    qids: dict[str, Path] = {}
-    pending = {}
+    other_articles = map(parse_article, sorted(set(entries.glob("*.md")) - targets.keys()))
+    existing = {
+        article.path: article.meta for article in other_articles if article.meta.type == "place"
+    }
 
-    for path in sorted(entries.glob("*.md")):
-        if path in targets:
-            continue
-        article = parse_article(path)
-        if article.meta.type != "place":
-            continue
-        if article.meta.wikidata_id:
-            qid = article.meta.wikidata_id
-            previous = qids.setdefault(qid, path)
-            if previous != path:
-                raise ValueError(f"{path}: QID {qid} also used in {previous}")
-        for form in (article.meta.term, *article.meta.variants):
-            previous = names.setdefault(name_key(form), path)
-            if previous != path:
-                raise ValueError(f"{path}: place name {form!r} also listed in {previous}")
+    require_unique(
+        chain(
+            ((meta.wikidata_id, path) for path, meta in existing.items() if meta.wikidata_id),
+            ((place.qid, path) for path, place in targets.items()),
+        ),
+        "QID",
+    )
+    require_unique(
+        chain(
+            (
+                (key, path)
+                for path, meta in existing.items()
+                for key in set(map(name_key, (meta.term, *meta.variants)))
+            ),
+            (
+                (name_key(form), path)
+                for path, place in targets.items()
+                for form in (place.term, *place.variants)
+            ),
+        ),
+        "place name",
+    )
 
-    for path, place in targets.items():
-        if place.qid in qids:
-            raise ValueError(f"{path}: QID {place.qid} also used in {qids[place.qid]}")
-        qids[place.qid] = path
-        for form in (place.term, *place.variants):
-            key = name_key(form)
-            if key in names:
-                raise ValueError(f"{path}: place name {form!r} also listed in {names[key]}")
-            names[key] = path
-        expected = place.article()
-        if path.exists():
-            if path.read_text(encoding="utf-8") != expected:
-                raise ValueError(f"{path}: differs from the catalog")
-        elif check:
-            raise ValueError(f"{path}: generated article is missing")
-        else:
-            pending[path] = expected
+    expected = {path: place.article() for path, place in targets.items()}
+    on_disk = {path for path in expected if path.exists()}
+    missing = expected.keys() - on_disk
+    if check and missing:
+        raise ValueError(f"{min(missing)}: generated article is missing")
 
-    return pending
+    changed = next(
+        (path for path in sorted(on_disk) if path.read_text(encoding="utf-8") != expected[path]),
+        None,
+    )
+    if changed is not None:
+        raise ValueError(f"{changed}: differs from the catalog")
+    return {path: text for path, text in expected.items() if path in missing}
 
 
 def main() -> int:
